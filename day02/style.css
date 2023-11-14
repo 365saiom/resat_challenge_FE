@@ -37,14 +37,20 @@ body {
   justify-content: center;
 }
 
+#timer > span {
+  font-size: 3rem;
+}
+
 #btn {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  align-items: center;
 }
 
 #btn > button {
+  margin-top: 20px;
   padding: 2px;
   background-color: white;
+  font-size: 1rem;
 }
