@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do 리스트 만들기</title>
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>TO-DO LIST</h1>
+      <div id="btn">
+        <button id="total">전체</button>
+        <button id="complete">완료</button>
+        <button id="incomplete">미완료</button>
+      </div>
+      <div>
+        <form>
+          <input id="input" type="text" placeholder="할 일을 작성해주세요." />
+          <input type="checkbox" name="importance" value="1">낮음</input>
+          <input type="checkbox" name="importance" value="2">보통</input>
+          <input type="checkbox" name="importance" value="3">높음</input>
+          <input type="checkbox" name="importance" value="4">아주 높음</input>
+          <button id="addTodo" type="submit">추가</button>
+        </form>
+      </div>
+      <div><ul id="todoList"></ul></div>
+    </div>
+  </body>
+</html>
