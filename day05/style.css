@@ -154,10 +154,13 @@ main {
 }
 
 footer {
-  margin: 20px 250px 100px 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer > .footer-title {
+  width: 1000px;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(50px, auto));
@@ -251,6 +254,7 @@ footer > .footer-title > .instagram > i {
 }
 
 footer > .footer-subtitle {
+  width: 1000px;
   margin-top: 20px;
   position: relative;
   display: grid;
@@ -268,4 +272,24 @@ footer > .footer-subtitle > .footer-logo {
   position: absolute;
   right: 0;
   font-size: 15px;
+}
+
+/* 헤더 메뉴 반응형 */
+@media screen and (max-width: 1025px) {
+  footer > .footer-title {
+    grid-template-columns: repeat(2, minmax(50px, auto));
+    grid-template-rows: repeat(4, minmax(30px, auto));
+  }
+  footer > .footer-title > .footer-menu {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  footer > .footer-title > .client-center {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  footer > .footer-title > .enterprise-survice {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
 }
