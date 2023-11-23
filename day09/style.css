@@ -1,0 +1,63 @@
+@import url(./reset.css);
+
+body {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: pink;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+header > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+header > ul > li {
+  font-size: 25px;
+}
+
+header > .fa-bars {
+  display: none;
+}
+
+.modal-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  header > ul {
+    display: none;
+  }
+
+  header > .fa-solid {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .modal-menu {
+    padding: 40px;
+    position: absolute;
+    right: -160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80px;
+    background-color: pink;
+    color: black;
+    transition: all 0.5s ease-in;
+  }
+  .modal-menu > li {
+    margin-bottom: 50px;
+  }
+}
